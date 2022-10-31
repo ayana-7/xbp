@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>ayana 第4回</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>第4回　ゲーム作成課題</h1>
+    <div>
+          <h2>８班で作成したゲーム　概要</h2><br>
+          班で話し合った結果、パチンコが好きな人がいたため、確率機を作成。<br>
+          このゲームでは、９９分の１で当たる確率のあるもを作成した。<br>
+          <br>
+          ↓ソースコード<br>
+          <img src="../de12/images/game ソースコード.png" width="50%"><br>
+          
+          <pre><code>
+            import random
+
+            number = random.randint(1,99) #1~99のランダムな整数。
+            if number == 1:         
+                print("121　はずれ")
+            elif number == 3:     
+                print("212　はずれ")
+            elif number == 5:      
+                print("343　はずれ") 
+            elif number == 8:     
+                print("454　はずれ") 
+            elif number == 12:       
+                print("565　はずれ") 
+            elif number == 22:       
+                print("656　はずれ") 
+            elif number == 77:       
+                print("777　当たり") 
+            elif number == 55:       
+                print("898　はずれ") 
+            elif number == 15:       
+                print("989　はずれ") 
+            elif number == 99:       
+                print("565　はずれ") 
+            elif number == 76:       
+                print("787　はずれ") 
+            elif number == 88:       
+                print("676　はずれ") 
+            elif number == 91:       
+                print("232　はずれ") 
+            else:
+                print("はずれ") 
+          </code></pre>
+    
+          作成してくれた人のリンク：
+    </div>
+
+</body>
+</html>
