@@ -5,7 +5,7 @@ import time
 
 #アラーム処理
 def Alarm():
-    print("時間です")
+    print("時間だよ。起きろー！")
 #   print("\007")  #ビープ音
     Sound()
     exit()   #これがないと無限ループになるので注意
@@ -13,7 +13,7 @@ def Alarm():
 #音再生処理
 def Sound():
     pygame.mixer.init() #初期化
-    pygame.mixer.music.load('birdland2.mp3') #読み込み
+    pygame.mixer.music.load('birdland1.mp3') #読み込み
     pygame.mixer.music.play(-1) #ループ再生（引数を1にすると1回のみ再生）
     input()
     pygame.mixer.music.stop() #終了
